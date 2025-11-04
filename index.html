@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>SkyCast | Live Weather Updates</title>
+  <title>Home | SkyCast</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -20,24 +20,23 @@
     </nav>
   </header>
 
-  <section class="hero">
-    <h2>Check the Weather Instantly</h2>
-    <p>Enter any city to see live weather updates.</p>
-  </section>
-
   <main>
-    <form>
-      <input type="text" id="cityInput" placeholder="Enter city name" required>
-      <button type="submit">Get Weather</button>
-    </form>
+    <section class="hero">
+      <h2>Welcome to SkyCast</h2>
+      <p>Get real-time weather updates anywhere in the world.</p>
+    </section>
 
-    <div id="weather"></div>
+    <section class="weather-search">
+      <input type="text" id="cityInput" placeholder="Enter city name">
+      <button id="searchBtn">Search</button>
+      <div id="weatherResult"></div>
+    </section>
   </main>
 
   <footer>
-    <p>© 2025 SkyCast Weather | Built with OpenWeather API</p>
+    <p>© 2025 SkyCast Weather</p>
   </footer>
 
-  <script src="script.js"></script>
+  <script src="script.js" defer></script>
 </body>
 </html>
